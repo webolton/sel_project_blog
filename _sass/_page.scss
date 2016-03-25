@@ -464,8 +464,8 @@ ul.social-buttons li a:active {
 	overflow: hidden;
 	height: 50px;
 	@media #{$medium} {
-		background-color: $header-color;
-		min-height: 300px;
+		background: url('/images/header.png');
+		min-height: 250px;
 	}
 }
 .header-toggle{
@@ -577,7 +577,8 @@ ul.social-buttons li a:active {
   width: $menu-height;
   height: $menu-height;
   float: left;
-  padding: 10px;
+  padding-top: 2px;
+  margin-right: 10px;
 }
 .header-item-container{
 	height: 100%;
