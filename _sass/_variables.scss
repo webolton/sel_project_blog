@@ -6,7 +6,7 @@ $base-font: 'Merriweather', Georgia, Times, serif;
 $heading-font: 'Fjalla One', Arial, sans-serif;
 $caption-font: $base-font;
 $code-font: 'Roboto Mono', monospace;
-$alt-font: serif;
+$alt-font: $base-font;
 
 $doc-font-size: 16;
 $doc-line-height: 26;
