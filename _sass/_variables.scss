@@ -1,10 +1,11 @@
 // Typography
 // --------------------------------------------------
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,900,900italic,700italic|Fjalla+One|Roboto+Mono:400,700);
 
-$base-font: 'Lato', Calibri, Arial, sans-serif;
-$heading-font: $base-font;
+$base-font: 'Merriweather', Georgia, Times, serif;
+$heading-font: 'Fjalla One', Arial, sans-serif;
 $caption-font: $base-font;
-$code-font: monospace;
+$code-font: 'Roboto Mono', monospace;
 $alt-font: serif;
 
 $doc-font-size: 16;
