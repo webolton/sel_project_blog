@@ -9,6 +9,7 @@ logo:             images/logo.png # logo visible in the topbar
 # When testing locally leave blank or use http://localhost:4000
 
 url: http://blog.digitalsel.org
+# url: http://localhost:4000
 
 # draw your top menu here
 # each item must have a title and a url.
@@ -18,27 +19,17 @@ url: http://blog.digitalsel.org
 menu:
   - title: 'Home'
     url: '/'
-  - title: 'Install'
-    url: '/theme-setup/'
-  - title: 'Tags'
-    url: '/tags'
-  - title: 'Categories'
-    url: '/categories'
-    type: 'categories'
-  - title: 'Favorites'
-    url: '#'
-    submenu:
-      - title: 'Code Highlighter'
-        url: '/intro/code-highlighting-post/'
-      - title: 'Sample Post'
-        url: '/intro/sample-post/'
+  - title: 'About the SEL'
+    url: '/about'
+  - title: 'About the Project'
+    url: '/about_the_digitalsel'
 
 # Owner/author information
 owner:
-  name:           William E. Bolton
+  name:           William E. Bolton, PhD
   site:           http://blog.digitalsel.org
   avatar:         images/avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
+  bio:            "William is a software developer and independent scholar living and working in Philadelphia. My academic work focuses on the lives of saints written in England between 850 and 1350."
   email:          you@email.com
   # Twitter nick for use in Twitter cards and follow button.
   twitter: william_ellet # if no twitter in this config, the twitter follow button will be removed
@@ -52,11 +43,9 @@ twitter:
 # Social networking links used in author block underneath posts. Update and remove as you like.
 social:
   - title: "github"
-    url: "https://github.com/aron-bordin"
-  - title: "linkedin"
-    url: "https://br.linkedin.com/in/aronbordin"
-  - title: "youtube"
-    url: "https://www.youtube.com/channel/UCfnSek-9HPWOx5e2pH7VFgg"
+    url: "https://github.com/webolton"
+  - title: "twitter"
+    url: "https://twitter.com/william_ellet"
 # Background image to be tiled on all pages
 background:
 
