@@ -21,7 +21,7 @@ menu:
     url: '/'
   - title: 'About the Author'
     url: '/about'
-  - title: 'The Project'
+  - title: 'About the DSEL'
     url: '/digitalsel_about'
 
 # Owner/author information

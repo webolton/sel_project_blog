@@ -579,7 +579,9 @@ ul.social-buttons li a:active {
   height: $menu-height;
   float: left;
   padding-top: 2px;
-  margin-right: 10px;
+  @media #{$medium} {
+		margin-right: 5px;
+	}
 }
 .header-item-container{
 	height: 100%;
@@ -596,13 +598,14 @@ ul.social-buttons li a:active {
 	border-top-width: 0px;
 	height: 100%;
 	a.title {
-		font-size: 2.5rem;
-    padding-left: 5px;
+		font-size: 1.2rem;
+    padding-left: 0px;
     padding-top: 10px;
-		display: none;
 		vertical-align: middle;
 		height: $menu-height - 2;
 		@media #{$medium}{
+			padding-left: 2px;
+			font-size: 2.5rem;
 			display: table-cell;
 		}
 	}
