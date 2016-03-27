@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About the South English Legendary
-share: true
+title: About
+share: false
 ---
 
-# About the South English Legendary
+# About the Author
