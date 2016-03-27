@@ -19,9 +19,9 @@ h1 {
 
 // Links
 // --------------------------------------------------
-a { 
+a {
 	text-decoration: none;
-	color: $link-color; 
+	color: $link-color;
 	&:visited { 
 		color: lighten($link-color, 20); 
 	}
