@@ -1,7 +1,22 @@
 ---
 layout: page
-title: About
+title: About the Author
+image:
+  feature: about_me.jpg
+  credit:
+  creditlink:
+share: true
 share: false
 ---
+{::options parse_block_html="true" /}
+<div class="entry-image-index">
+<img src="/images/about_me.jpg" alt="About the Author">
+</div>
 
-# About the Author
+## Hi! I am a medievalist and a software developer.
+
+In 2012, I earned my PhD from Arizona State University in English literature, where I focused on early medieval lives of saints and English legal history. I have taught a variety of composition, literature, and linguistics courses and have published essays and presented papers on topics in early English and Latin literature ranging from Ælfric of Eysham to Spenser. [Download my CV](/downloads/bolton_cv.pdf) for the specifics.
+
+Presently, I work as a software developer working mainly in Ruby on Rails. I work and live in beautiful Philadelphia, Pennsylvania with my wife, [Sara Wachter-Boettcher](http://www.sarawb.com/){:target='_blank'}, and two large cats.
+
+The DigitalSEL is an effort to bring my professional work in programing to bear on my academic research interests. My goal is to present a first-rate edition of the *SEL* that uses both the digital format and programming to help scholars think about medieval texts in new and enlightening ways.
