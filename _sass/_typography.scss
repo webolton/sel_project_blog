@@ -77,6 +77,18 @@ blockquote {
 	}
 }
 
+// Medieval Blockquote
+blockquote.medieval {
+	font-family: $medieval;
+	font-style: normal;
+	font-size: 1.2rem;
+	border-left: 8px solid $border-color;
+	padding-left: 20px;
+	@media #{$medium} {
+		margin-left: -28px;
+	}
+}
+
 // List items
 // --------------------------------------------------
 .entry-content li {
