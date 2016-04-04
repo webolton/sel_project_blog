@@ -19,4 +19,4 @@ I earned my PhD from Arizona State University in English literature, where I foc
 
 Presently, I am a software developer at a small Ruby on Rails firm, [Neomind Labs](http://www.neomindlabs.com/){:target='_blank'}, here in beautiful Philadelphia, PA. I live with my wife, [Sara Wachter-Boettcher](http://www.sarawb.com/){:target='_blank'}, and two large cats.
 
-The DigitalSEL is an effort to bring my professional work in programing to bear on my academic research interests. My goal is to present a first-rate edition of the *SEL* that uses both a digital format and sophistocated programming to help scholars think about medieval texts and textual studies in new and enlightening ways.
+The [DigitalSEL](http://digitalsel.org/){:target='_blank'} is an effort to bring my professional work in programing to bear on my academic research interests. My goal is to present a first-rate edition of the *SEL* that uses both a digital format and sophistocated programming to help scholars think about medieval texts and textual studies in new and enlightening ways.

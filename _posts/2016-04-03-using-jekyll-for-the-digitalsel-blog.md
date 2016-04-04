@@ -17,7 +17,7 @@ date: 2016-04-03T13:59:39-04:00
 {:style='text-align: center;'}
 
 ### Showing my work
-Early on, I decided that I should blog about everything I did on the reboot of the DigitalSEL project. A blog will be a good place to document the project’s development and record its successes and challenges. I also hope that the blog will be useful to other independent scholars and academics who might be building similar applications. Goodness knows, I find other people's blogs incredibly helpful when I am trying to solve programming problems and I would love to return the favor if I can.
+Early on, I decided that I should blog about everything I did on the reboot of the [DigitalSEL](http://digitalsel.org/){:target='_blank'} project. A blog will be a good place to document the project’s development and record its successes and challenges. I also hope that the blog will be useful to other independent scholars and academics who might be building similar applications. Goodness knows, I find other people's blogs incredibly helpful when I am trying to solve programming problems and I would love to return the favor if I can.
 
 ### So, which platform?
 There are many good options for academics looking for a blogging platform and they all have advantages and disadvantages. [Wordpress.com](https://wordpress.com/){:target='_blank'} is easy to use and inexpensive. [Wordpress.org](https://wordpress.org/){:target='_blank'} (yeah, they are different) offers more customization and is also easy to use, but is sometimes not as cheap to set up. [Squarespace](http://www.squarespace.com/){:target='_blank'} is also a bit more expensive, but their sites are famously good looking are are also easy to use.
