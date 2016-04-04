@@ -18,6 +18,7 @@ body {
 }
 
 // medieval font
+
 @font-face {
   font-family: 'Junicode';
   src: url('../fonts/Junicode-Italic.eot');
@@ -54,7 +55,20 @@ body {
   font-style: italic;
 }
 
-$medieval: "Junicode";
+@font-face {
+  font-family: 'Junicode';
+  src: url('../fonts/Junicode.eot');
+  src: url('../fonts/Junicode.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Junicode.woff2') format('woff2'),
+    url('../fonts/Junicode.woff') format('woff'),
+    url('../fonts/Junicode.ttf') format('truetype'),
+    url('../fonts/Junicode.svg#Junicode') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+$medieval: 'Junicode';
 
 // Colors
 // --------------------------------------------------
