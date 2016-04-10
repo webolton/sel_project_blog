@@ -17,9 +17,7 @@ date: 2016-04-09T15:17:12-04:00
 ### The Virtues of Planning
 
 "Prudence," to paraphrase [Augustine](https://en.wikipedia.org/wiki/Augustine_of_Hippo){:target='_blank'}, "is the desire to choose wisely between the things that help and those that hinder."[^1]
-Though it holds less moral imperative for the design of a digital edition, Augustine’s description of foresight is a useful maxim for these first steps on the DigitalSEL. Good data modeling and database design makes a big difference in the viability of a project and how easy it will be to maintain. Fundamentally for the DigtialSEL, the database will store most of the text in the project, so it is important to design it with care.
-
-### Relational Databases are like Magic
+Though it holds less moral imperative for the design of a digital edition, Augustine’s description of foresight is a useful maxim for these first steps on the DigitalSEL. Good data modeling and database design make a big difference in the viability of a project and how easy it will be to maintain. Fundamentally for the DigitalSEL, the database will store most of the text in the project, so it is important to design it with care.
 
 ![Magic]({{site.url}}/images/magic.gif)
 *Tools of the Trade*
@@ -67,7 +65,7 @@ To work through an example, let’s take the Life of Oswald the King in MS BL, E
 
   * Since I have included a link between both the `manuscript` and `archetype` through the `witness` table, I can also say that the `archetype` will `have_many` different manuscript versions.
 
-  * If I choose to create notes about this *witness* Life of Oswand, they will be saved in such a way that they would also be available to the *manuscript* object through the *witness* table. Since this is true for all *witnesses* associated with Egerton 1993, it will be possible to query the database starting with Egerton 1993, through each *witness*, and then return all of the *textual_notes*. This will tie all of the notes I might do on a *witness* to the *manuscript* it belongs to.
+  * If I choose to create notes about this *witness* Life of Oswand, they will be saved in such a way that they would also be available to the *manuscript* object through the *witness* table. Since this is true for all *witnesses* associated with Egerton 1993, it will be possible to query the database starting with Egerton 1993, through each *witness*, and then return all of the *textual_notes*. This will tie all of the notes I might add to a *witness* to the *manuscript* it belongs to.
 
 ### Iteration, Iteration, Iteration
 
@@ -76,4 +74,4 @@ It is likely that the model will change as I actually start writing the database
 [^1]: Augustine's actual phrasing treats the virtue allegorically: "prudentia, amor ea quibus adujvatur ab eis quibus impeditur, sagaciter seligens" in [*De Moribus Ecclesiae Catholicae et de Moribus Manichaeorum*](http://www.documentacatholicaomnia.eu/04z/z_0354-0430__Augustinus__De_Moribus_Ecclesiae_Catholicae_et_de_Moribus_Manichaeorum__MLT.pdf.html){:target='_blank'}, cap. 15.
 [^2]: I used a web-based tool, [Creatly](http://creately.com/){:target='_blank'}, to draw these tables.
 [^3]: In case you are wondering what is going on with these words with a colon in front of them, they are a special data type called a `symbol`. In order to cut down on memory use, most databases have different rules about the data types that you store in them. When you specify that a piece of data will be an `integer`, the database will only except integers in that space. A `symbol` looks a lot like a `string`, which is basically a word or string of characters. A `symbol` is special, however, because its is stored in memory in a special way that saves memory.
-[^4]: "Archetype," has a lot going for it in this context. It is not specific like "legend" or "saint's life," less vague than "text" or "item," and accurately describes the fact that the *ursprüngliche* form of a text in the *SEL* doesn’t actually exist.
+[^4]: "Archetype" has a lot going for it in this context. It is not specific like "legend" or "saint's life," less vague than "text" or "item," and accurately describes the fact that the *ursprüngliche* form of a text in the *SEL* doesn’t actually exist.
