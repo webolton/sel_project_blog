@@ -67,7 +67,7 @@ To work through an example, let’s take the Life of Oswald the King in MS BL, E
 
   * Since I have included a link between both the `manuscript` and `archetype` through the `witness` table, I can also say that the `archetype` will `have_many` different manuscript versions.
 
-  * If I choose to create notes about this *witness* Life of Oswand, they will be saved in such a way that they would also be available to the *manuscript* object through the *witness* table. Since this is true for all *witnesses* associated with Egerton 1993, it will be possible to query the database starting with Egerton 1993, through each *witness*, and then return all of the *textual_notes*. This will tie all of the noes I might do on a *witness* to the *manuscript* it belongs to.
+  * If I choose to create notes about this *witness* Life of Oswand, they will be saved in such a way that they would also be available to the *manuscript* object through the *witness* table. Since this is true for all *witnesses* associated with Egerton 1993, it will be possible to query the database starting with Egerton 1993, through each *witness*, and then return all of the *textual_notes*. This will tie all of the notes I might do on a *witness* to the *manuscript* it belongs to.
 
 ### Iteration, Iteration, Iteration
 
