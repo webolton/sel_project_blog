@@ -50,12 +50,12 @@ At its core, the data model for the DigitalSEL has to contend with the relations
 
 ### The Data Model for the DigitalSEL's Texts
 
-Here is a diagram of the basic data structure I have designed for the DigitalSEL's texual edition:
+Here is a diagram of the basic data structure I have designed for the DigitalSEL's textual edition:
 
 ![DSEL text table]({{site.url}}/images/dsel_table.png)
 {: .image-center }
 
-Because I am fundamentally interested in making a critical edition, the textual *witness* is at the center of my data model and the actual edition of each text will be stored in its `witness_text` attribute (OMG, more on that later). A *witness* belongs to one particular manuscript and a manuscript has only one of any single witness. An *archetype* will have many *witnesses* and will have a `one_to_many` relationship with *manuscripts* through *witnesses*. Lastly, I have decided that I am going to store textual notes in a seperate table because I want to create a feature that will allow users to annotate sections of the a *witness* text in real time.
+Because I am fundamentally interested in making a critical edition, the textual *witness* is at the center of my data model and the actual edition of each text will be stored in its `witness_text` attribute (OMG, more on that later). A *witness* belongs to one particular manuscript and a manuscript has only one of any single witness. An *archetype* will have many *witnesses* and will have a `one_to_many` relationship with *manuscripts* through *witnesses*. Lastly, I have decided that I am going to store textual notes in a separate table because I want to create a feature that will allow users to annotate sections of the a *witness* text in real time.
 
 To work through an example, let’s take the Life of Oswald the King in MS BL, Egerton 1993:
 
@@ -65,7 +65,7 @@ To work through an example, let’s take the Life of Oswald the King in MS BL, E
 
   * Since I have included a link between both the `manuscript` and `archetype` through the `witness` table, I can also say that the `archetype` will `have_many` different manuscript versions.
 
-  * If I choose to create notes about this *witness* Life of Oswand, they will be saved in such a way that they would also be available to the *manuscript* object through the *witness* table. Since this is true for all *witnesses* associated with Egerton 1993, it will be possible to query the database starting with Egerton 1993, through each *witness*, and then return all of the *textual_notes*. This will tie all of the notes I might add to a *witness* to the *manuscript* it belongs to.
+  * If I choose to create notes about this *witness* Life of Oswald, they will be saved in such a way that they would also be available to the *manuscript* object through the *witness* table. Since this is true for all *witnesses* associated with Egerton 1993, it will be possible to query the database starting with Egerton 1993, through each *witness*, and then return all of the *textual_notes*. This will tie all of the notes I might add to a *witness* to the *manuscript* it belongs to.
 
 ### Iteration, Iteration, Iteration
 
