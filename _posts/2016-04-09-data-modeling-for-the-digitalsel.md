@@ -31,7 +31,7 @@ For example, we could make a database table for a saint:[^2]
 ![Aquinas Table]({{site.url}}/images/aquinas_table.png)
 {: .image-center }
 
-It's pretty clear from a table like this that we can store and retrieve information about something specific a like a saint — if we locate the `saint` table with the `:id`[^3] number 1, we would be able to discover that it happens to store information about [Aquinas](https://en.wikipedia.org/wiki/Thomas_Aquinas){:target='_blank'}. Our data becomes much more exciting and structured, however, if we create another table and create a relationship. For example, we could make a table for a `fraternal_order` and give it a `has_many` relationship to `saints`:
+It's pretty clear from a table like this that we can store and retrieve information about something specific like a saint — if we locate the `saint` table with the `:id`[^3] number 1, we would be able to discover that it happens to store information about [Aquinas](https://en.wikipedia.org/wiki/Thomas_Aquinas){:target='_blank'}. Our data becomes much more exciting and structured, however, if we create another table and create a relationship. For example, we could make a table for a `fraternal_order` and give it a `has_many` relationship to `saints`:
 
 ![Dominican Table]({{site.url}}/images/dominican_table.png)
 {: .image-center }
