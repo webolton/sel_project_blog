@@ -1,12 +1,16 @@
-// Typography
-// --------------------------------------------------
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,900,900italic,700italic|Fjalla+One|Roboto+Mono:400,700);
+// .・。.・゜✭・.・✫・゜・。..・。.・゜✭・.・✫・゜・。.
+//
+//                 Typography
+//
+//  .・。.・゜✭・.・✫・゜・。..・。.・゜✭・.・✫・゜・。.
 
-$base-font: 'Merriweather', Georgia, Times, serif;
-$heading-font: 'Fjalla One', Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i|Roboto+Mono|Roboto:400,700&subset=latin-ext');
+
+$base-font: 'Merriweather', Calibri, Arial, sans-serif;
+$heading-font: Roboto;
 $caption-font: $base-font;
 $code-font: 'Roboto Mono', monospace;
-$alt-font: $base-font;
+$alt-font: serif;
 
 $doc-font-size: 16;
 $doc-line-height: 26;
@@ -17,7 +21,11 @@ body {
 	font-size: 0px + $doc-font-size;
 }
 
-// medieval font
+// .・。.・゜✭・.・✫・゜・。..・。.・゜✭・.・✫・゜・。.
+//
+//               Medieval Fonts
+//
+// .・。.・゜✭・.・✫・゜・。..・。.・゜✭・.・✫・゜・。.
 
 @font-face {
   font-family: 'Junicode';
@@ -67,36 +75,42 @@ body {
   font-style: normal;
 }
 
-
 $medieval: 'Junicode';
 
-// Colors
-// --------------------------------------------------
-$base-color				 : rgba(#222,0.8);
-$header-color			 : rgba(#000,0.8);
-$sub-item-color			 : rgba(#000, 0.1);
-$header-margin			 : #B01F21;
-$menu-top				 : white;
-$menu-height			 : 70px;
-$menu-overflow			 : #2E2E2E;
-// $body-color      		 : #e8e8e8;
-$body-color           : #ffffff;
-$text-color      		 : rgba(#222,0.8);
-$comp-color 	 		 : complement(#222);
-$border-color    		 : lighten(#222,60);
-$white           		 : #fff;
-$black           		 : #000;
-$link-color 		     : rgba(#222,0.8);
+// .・。.・゜✭・.・✫・゜・。..・。.・゜✭・.・✫・゜・。.
+//
+//               Colors
+//
+// .・。.・゜✭・.・✫・゜・。..・。.・゜✭・.・✫・゜・。.
 
-$primary			     : #222;
-$success			     : #5cb85c;
-$warning			     : #dd8338;
-$danger				     : #C64537;
-$info				     : #308cbc;
+$dark-cerulean        : #005794;
 
+$base-color          : rgba(#222,0.8);
+$header-color        : rgba(#000,0.8);
+$sub-item-color      : rgba(#000, 0.1);
+$header-margin       : #F45145;
+$menu-top            : white;
+$menu-height         : 70px;
+$menu-overflow       : #2E2E2E;
+$body-color          : #e8e8e8;
+$text-color          : rgba(#222,0.8);
+$comp-color          : complement(#222);
+$border-color        : lighten(#222,60);
+$white               : #fff;
+$black               : #000;
+$link-color          : rgba(#222,0.8);
 
-// Screen Size
-// --------------------------------------------------
+$primary             : #222;
+$success             : #5cb85c;
+$warning             : #dd8338;
+$danger              : #C64537;
+$info                : #308cbc;
+
+// .・。.・゜✭・.・✫・゜・。..・。.・゜✭・.・✫・゜・。.
+//
+//               Screen Size
+//
+// .・。.・゜✭・.・✫・゜・。..・。.・゜✭・.・✫・゜・。.
 
 $small               : "only screen and (min-width: 30em)";
 $medium              : "only screen and (min-width: 48em)";

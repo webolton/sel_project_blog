@@ -2,7 +2,7 @@
 layout: post
 title: Transcription and Programmatic Markup for the DigitalSEL
 modified:
-categories: 
+categories:
 description:
 tags: []
 image:

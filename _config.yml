@@ -1,8 +1,9 @@
 title:            Digital SEL Blog
 description:      Describing the development of the Digital SEL Project.
 
-words_per_minute: 200
 logo:             images/logo.png # logo visible in the topbar
+excerpt_separator: <!--more-->
+
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
 
@@ -15,11 +16,9 @@ url: http://blog.digitalsel.org
 #   To create sub categories. add a submenu item
 # See the example
 menu:
-  - title: 'Home'
-    url: '/'
   - title: 'About the Author'
-    url: '/about'
-  - title: 'About the DSEL'
+    url: '/author_about'
+  - title: 'About the Digital SEL'
     url: '/digitalsel_about'
 
 # Owner/author information
@@ -27,11 +26,11 @@ owner:
   name:           William E. Bolton, PhD
   site:           http://blog.digitalsel.org
   avatar:         images/avatar.jpg
-  bio:            "William is a software developer and independent scholar living and working in Philadelphia. My academic work focuses on the lives of saints written in England between 850 and 1350."
-  email:          you@email.com
-  # Twitter nick for use in Twitter cards and follow button.
+  bio:            'William is a engineer and independent scholar living and working in Philadelphia. My academic work focuses on the lives of saints written in England between 850 and 1350.'
+  email:          william.ellet@email.com
+  # Twitter for use in Twitter cards and follow button.
   twitter: william_ellet # if no twitter in this config, the twitter follow button will be removed
-  # GitHub nick for use in follow button in author block.
+  # GitHub for use in follow button in author block.
   github: webolton
 
 # Twitter account associated with the site if different from owner/author twitter account.
@@ -40,10 +39,9 @@ twitter:
 
 # Social networking links used in author block underneath posts. Update and remove as you like.
 social:
-  - title: "github"
-    url: "https://github.com/webolton"
-  - title: "twitter"
-    url: "https://twitter.com/william_ellet"
+  - title: 'github'
+    url: 'https://github.com/webolton'
+
 # Background image to be tiled on all pages
 background:
 
@@ -59,8 +57,6 @@ locale:      en_US
 future:      true
 highlighter: rouge
 markdown:    kramdown
-gems:
-  - jekyll-sitemap
 sass:
   sass_dir: _sass
   style: compressed
@@ -79,7 +75,7 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  enable_coderay: true
+  syntax_highlighter_opts: true
   input: GFM
   input:          GFM
   # https://github.com/jekyll/jekyll/pull/4090
@@ -97,12 +93,12 @@ kramdown:
       line_numbers: true
       start_line: 1
 
-  coderay:
-    coderay_line_numbers: nil
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
+  syntax_highlighter_opts:
+    syntax_highlighter_line_numbers: nil
+    syntax_highlighter_line_numbers_start: 1
+    syntax_highlighter_tab_width: 4
+    syntax_highlighter_bold_every: 10
+    syntax_highlighter_css: class
 
 # Octopress
 # Default extensions
@@ -114,6 +110,6 @@ page_layout: page
 # Format titles with titlecase?
 titlecase: true
 
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
-gems: [jekyll-paginate]
+include: ['.htaccess']
+exclude: ['demo/*', 'lib', 'config.rb', 'Capfile', 'config', 'Gemfile', 'Gemfile.lock', 'README.md', 'LICENSE', 'log', 'Rakefile', 'Rakefile.rb', 'tmp', 'less', '*.sublime-project', '*.sublime-workspace', 'test', 'spec', 'Gruntfile.js', 'package.json', 'node_modules']
+plugins: [jekyll-paginate]

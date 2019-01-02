@@ -1,22 +1,22 @@
 body {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	background-color: $body-color;
-	overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: $body-color;
+  overflow-x: hidden;
 }
 
 // Main
-// --------------------------------------------------
+//   .・。.・゜✭・.・✫・゜・。..・。.・゜✭・.・✫・゜・。.
 .entry,
 .hentry {
-	@include clearfix;
-	h1, h2, h3, h4, h5, h6, p, li {
-		word-wrap: break-word;
-	}
+  @include clearfix;
+  h1, h2, h3, h4, h5, h6, p, li {
+    word-wrap: break-word;
+  }
 }
 .hentry-dark {
-	background-color: $header-color;
+  background-color: $header-color;
 }
 .entry-content {
 	@include font-size(16);
@@ -89,10 +89,10 @@ body {
 }
 
 // Single Post and Page
-// --------------------------------------------------
+//   .・。.・゜✭・.・✫・゜・。..・。.・゜✭・.・✫・゜・。.
 .entry-meta {
 	@include font-rem(12);
-	// text-transform: uppercase;
+	text-transform: uppercase;
 	color: lighten($base-color,60);
 	a {
 		color: lighten($base-color,60);
@@ -119,9 +119,6 @@ body {
 		&:hover {
 			background-color: lighten($base-color,40);
 		}
-	}
-	.entry-reading-time {
-		float: right;
 	}
 }
 header .entry-meta {
@@ -184,6 +181,13 @@ header .entry-meta {
 .tag-heading,
 .year-heading {
 	margin-top: 0;
+}
+// Go to the exact location of bookmarks in tags, categories
+.anchor-bookmark{
+  display: block;
+  height: $menu-height; /*same height as header*/
+  margin-top: -$menu-height; /*same height as header*/
+  visibility: hidden;
 }
 // Permalink icon for link post
 .permalink {
@@ -308,11 +312,11 @@ ul.social-buttons li:hover a{
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    color: #222;
-    background-color: #fec503;
+  color: #222;
+  background-color: #fec503;
 }
 .read-more-list {
-	border-top: solid 2px lighten($base-color,80);
+  border-top: solid 2px lighten($base-color,80);
 }
 .list-item {
 	width: 100%;
@@ -336,7 +340,7 @@ ul.social-buttons li a:active {
 }
 
 // Post Index
-// --------------------------------------------------
+//   .・。.・゜✭・.・✫・゜・。..・。.・゜✭・.・✫・゜・。.
 #post-index {
 	#main {
 		margin: 40px 2px 20px 2px;
@@ -390,7 +394,7 @@ ul.social-buttons li a:active {
 }
 
 // Footer
-// --------------------------------------------------
+//   .・。.・゜✭・.・✫・゜・。..・。.・゜✭・.・✫・゜・。.
 .footer-wrapper {
 	@include clearfix;
 	margin: 2em auto;
@@ -402,11 +406,10 @@ ul.social-buttons li a:active {
 }
 
 // Social Share
-// --------------------------------------------------
+//   .・。.・゜✭・.・✫・゜・。..・。.・゜✭・.・✫・゜・。.
 .socialcount {
 	@include font-rem(16);
 	li {
-    font-family: $heading-font;
 		padding-left: 10px;
 		padding-right: 10px;
 	}
@@ -416,18 +419,16 @@ ul.social-buttons li a:active {
 	}
 }
 
-.author-share{
-	height: 50px;
-}
+
 // Browser Upgrade
-// --------------------------------------------------
+//   .・。.・゜✭・.・✫・゜・。..・。.・゜✭・.・✫・゜・。.
 .upgrade {
 	padding: 10px;
 	text-align: center;
 }
 
 // Google Search
-// --------------------------------------------------
+//   .・。.・゜✭・.・✫・゜・。..・。.・゜✭・.・✫・゜・。.
 #goog-fixurl {
 	ul {
 		list-style: none;
@@ -456,26 +457,26 @@ ul.social-buttons li a:active {
 	@extend .btn;
 }
 
-// Header
-// --------------------------------------------------
+// header
+//   .・。.・゜✭・.・✫・゜・。..・。.・゜✭・.・✫・゜・。.
 .entry-header {
-	width: 100%;
-	overflow: hidden;
-	position: relative;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	height: 50px;
-	@media #{$medium} {
-		background: url('/images/header.png');
-		min-height: 250px;
-	}
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  height: 50px;
+  @media #{$medium} {
+    background: url('/images/header.png');
+    min-height: 175px;
+  }
 }
 .header-toggle{
-	display: block;
-	@media #{$large} {
-		display: none;
-	}
+  display: block;
+  @media #{$large} {
+    display: none;
+  }
 }
 .header-title {
 	text-align: center;
@@ -508,7 +509,7 @@ ul.social-buttons li a:active {
 			@include font-rem(26);
 		}
 		@media #{$large} {
-			@include font-rem(46);
+			@include font-rem(36);
 		}
 	}
 	h1.post-title{
@@ -522,20 +523,20 @@ ul.social-buttons li a:active {
 	}
 }
 .header-menu {
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: $menu-height;
-	z-index: 20;
-	ul {
-		margin: 0 auto;
-		list-style-type: none;
-		height: 100%;
-		padding: 0;
-		@media #{$large} {
-			max-width: 900px;
-		}
-	}
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $menu-height;
+  z-index: 20;
+  ul {
+    margin: 0 auto;
+    list-style-type: none;
+    height: 100%;
+    padding: 0;
+    @media #{$large} {
+      max-width: 900px;
+    }
+  }
 }
 .header-menu-top{
 	background-color: $menu-top;
@@ -548,88 +549,93 @@ ul.social-buttons li a:active {
 	box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.4);
 }
 .header-menu-overflow ul li a{
-	color: $white;
+  color: $white;
 }
 
 .header-menu-top .sub-item{
-	background-color: $menu-top;
+  background-color: $menu-top;
 }
 
 .header-menu-overflow .sub-item{
-	background-color: $menu-overflow;
+  background-color: $menu-overflow;
 }
 
 .header-item,
 .header-item-title {
-	float: right;
-	padding-left: 20px;
-	padding-right: 20px;
-	border-top-color: transparent;
-	border-top-style: solid;
-	border-top-width: 5px;
-	box-sizing: border-box;
+  font-family: $heading-font;
+  font-weight: bold;
+  float: right;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top-color: transparent;
+  border-top-style: solid;
+  box-sizing: border-box;
 
-	a {
-		vertical-align: middle;
-		display: table-cell;
-		height: $menu-height - 2;
-	}
+  a {
+    vertical-align: middle;
+    display: table-cell;
+    height: $menu-height - 2;
+  }
 }
-///sections
+
+.header-item-title a {
+  color: $dark-cerulean;
+  &:hover {
+    color: #0075c8;
+  }
+}
+
+// sections
+//   .・。.・゜✭・.・✫・゜・。..・。.・゜✭・.・✫・゜・。.
 .logo{
   width: $menu-height;
   height: $menu-height;
   float: left;
-  padding-top: 2px;
-  @media #{$medium} {
-		margin-right: 5px;
-	}
+  padding: 10px;
 }
 .header-item-container{
-	height: 100%;
+  height: 100%;
 }
 .header-item{
-	height: 100%;
-	display: none;
-	@media #{$large} {
-		display: block;
-	}
+  height: 100%;
+  display: none;
+  @media #{$large} {
+    display: block;
+  }
 }
 .header-item-title{
-	float: left;
-	border-top-width: 0px;
-	height: 100%;
-	a.title {
-		font-size: 1.2rem;
-    padding-left: 0px;
-    padding-top: 10px;
-		vertical-align: middle;
-		height: $menu-height - 2;
-		@media #{$medium}{
-			padding-left: 2px;
-			font-size: 2.5rem;
-			display: table-cell;
-		}
-	}
+  float: left;
+  border-top-width: 0px;
+  height: 100%;
+  a.title {
+    font-size: 1.5rem;
+      padding-left: 5px;
+    display: none;
+    vertical-align: middle;
+    height: $menu-height - 2;
+    @media #{$medium}{
+      display: table-cell;
+    }
+  }
 }
 
 .header-item.active,
 .header-item:hover{
-  border-top-color: $header-margin;
+  border-top-color: $dark-cerulean;
 }
 
 .header-item:hover .header-submenu{
-	display: block;
-	position: absolute;
+  display: block;
+  position: absolute;
 }
 
 .header-submenu {
-	display: none;
-	border-top: 2px solid $header-margin;
-	width: 200px;
-	z-index: 100;
-	list-style-type: none;
-	transform: translateX(-25%);
+  display: none;
+  border-top: 2px solid $header-margin;
+  width: 200px;
+  z-index: 100;
+  list-style-type: none;
+  transform: translateX(-25%);
 }
 
 .sub-item {

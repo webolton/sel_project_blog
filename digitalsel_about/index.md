@@ -18,4 +18,3 @@ My goal with the project is to present expertly edited versions of every manuscr
 Right now, the project exists as a static JavaScript application that I made when I first started thinking about programming as a useful tool for doing textual analysis and making textual editions. My goal is to take what I have learned in my current profession as a software developer, and refine and expand the project into a much more sophisticated application.
 
 If you are interested in this work, want to contribute, or just want to chat, feel free to contact me at <wbolton@asu.edu> or direct message me on [Twitter](http://www.twitter.com/william_ellet/){:target='_blank'}.
-

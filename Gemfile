@@ -1,4 +1,5 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'github-pages'
-gem 'octopress', '~> 3.0.0.rc.12'
+gem 'octopress'
+gem 'jekyll-paginate'
+gem 'neo-hpstr-jekyll-theme'
