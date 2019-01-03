@@ -29,7 +29,7 @@ owner:
   bio:            'William is a engineer and independent scholar living and working in Philadelphia. My academic work focuses on the lives of saints written in England between 850 and 1350.'
   email:          william.ellet@email.com
   # Twitter for use in Twitter cards and follow button.
-  twitter: william_ellet # if no twitter in this config, the twitter follow button will be removed
+  # twitter: william_ellet # if no twitter in this config, the twitter follow button will be removed
   # GitHub for use in follow button in author block.
   github: webolton
 
